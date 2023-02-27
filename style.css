@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color */
+  --clr-hero-section-bg: #fafafa;
+  --clr-blue-primary: #2a62ff;
+  --clr-footer-bg: #2e3469;
+  --clr-primary-text: #1a1d24;
+  --clr-inside-boxes: #8993a6;
+  --clr-btn-text: #ffffff;
+
+  /* Font-size */
+  --fs-primary-heading: 4rem;
+  --fs-btn-text: 1.6rem;
+  --fs-secondary-heading: 3.6rem;
+  --fs-boxes-heading: 2rem;
+  --fs-boxes-details: 1.4rem;
+  --fs-footer-text: 1.2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
