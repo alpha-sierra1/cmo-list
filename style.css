@@ -26,3 +26,157 @@
 html {
   font-size: 62.5%;
 }
+/*********************************/
+/*              NAVBAR           */
+/*********************************/
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.cms-logo {
+  height: 3rem;
+}
+
+.sign-in-btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs-btn-text);
+  background-color: var(--clr-btn-text);
+  border: 1px solid var(--clr-blue-primary);
+  border-radius: 20px;
+  color: var(--clr-blue-primary);
+  padding: 0.5rem 3.5rem;
+  cursor: pointer;
+}
+
+/*********************************/
+/*         HERO SECTION          */
+/*********************************/
+
+.section-1 {
+  display: flex;
+  justify-content: space-around;
+}
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.heading-primary {
+  font-size: var(--fs-primary-heading);
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-primary-text);
+  width: 35vw;
+  /* line-height: -2; */
+}
+.section-description {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #40495c;
+  width: 30vw;
+}
+.apply-btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs-btn-text);
+  color: var(--clr-btn-text);
+  background-color: var(--clr-blue-primary);
+  border: 1px solid var(--clr-blue-primary);
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  width: 25rem;
+  /* defined width for button because it was taking up all the space in flexbox */
+}
+.illustration-img {
+  width: 100%;
+}
+
+/*********************************/
+/*            SECTION 2          */
+/*********************************/
+
+.secondary-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs-secondary-heading);
+  color: var(--clr-primary-text);
+  text-align: center;
+}
+.customer-companies {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********************************/
+/*            SECTION 3          */
+/*********************************/
+.heading-tertiary {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs-secondary-heading);
+  color: var(--clr-primary-text);
+  text-align: center;
+}
+.section-3-boxes {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+.box-1 {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 30rem;
+  gap: 1em;
+  padding: 3rem;
+}
+.box-logo {
+  width: 5rem;
+}
+/* defined width for box logo because it logo took all space because of flexbox */
+
+.box-heading {
+  font-size: var(--fs-boxes-heading);
+  color: var(--clr-primary-text);
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+.box-details {
+  font-size: var(--fs-boxes-details);
+  color: var(--clr-inside-boxes);
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+
+/*********************************/
+/*            FOOTER             */
+/*********************************/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-footer-bg);
+  padding: 2rem;
+}
+.footer-box-1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footert-text,
+.footer-box-2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs-footer-text);
+  color: var(--fs-footer-text);
+  color: #9597ae;
+}
+
+.footer-box-2 {
+  display: flex;
+  gap: 2rem;
+}
