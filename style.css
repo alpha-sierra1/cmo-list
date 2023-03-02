@@ -179,4 +179,5 @@ footer {
 .footer-box-2 {
   display: flex;
   gap: 2rem;
+  background-color: #1a1d24;
 }
