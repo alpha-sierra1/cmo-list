@@ -26,6 +26,18 @@
 html {
   font-size: 62.5%;
 }
+
+/**************    Attempting DRY Principle    *************/
+
+.button {
+  font-size: var(--fs-btn-text);
+  cursor: pointer;
+}
+.font-family,
+.button {
+  font-family: "DM Sans", sans-serif;
+}
+
 /*********************************/
 /*              NAVBAR           */
 /*********************************/
@@ -33,20 +45,21 @@ html {
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 85vw;
+  padding: 2rem 0.2rem;
 }
 .cms-logo {
   height: 3rem;
 }
 
 .sign-in-btn {
-  font-family: "DM Sans", sans-serif;
-  font-size: var(--fs-btn-text);
   background-color: var(--clr-btn-text);
   border: 1px solid var(--clr-blue-primary);
   border-radius: 20px;
   color: var(--clr-blue-primary);
   padding: 0.5rem 3.5rem;
-  cursor: pointer;
 }
 
 /*********************************/
@@ -56,12 +69,14 @@ html {
 .section-1 {
   display: flex;
   justify-content: space-around;
+  background-color: var(--clr-hero-section-bg);
 }
 .sub-section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  padding: 5rem 0;
 }
 .heading-primary {
   font-size: var(--fs-primary-heading);
@@ -71,20 +86,16 @@ html {
   /* line-height: -2; */
 }
 .section-description {
-  font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
   color: #40495c;
   width: 30vw;
 }
 .apply-btn {
-  font-family: "DM Sans", sans-serif;
-  font-size: var(--fs-btn-text);
   color: var(--clr-btn-text);
   background-color: var(--clr-blue-primary);
   border: 1px solid var(--clr-blue-primary);
   border-radius: 30px;
   padding: 1rem 2.5rem;
-  cursor: pointer;
   width: 25rem;
   /* defined width for button because it was taking up all the space in flexbox */
 }
@@ -96,35 +107,49 @@ html {
 /*            SECTION 2          */
 /*********************************/
 
+.section-2 {
+  padding: 5rem;
+}
+
 .secondary-heading {
-  font-family: "DM Sans", sans-serif;
   font-size: var(--fs-secondary-heading);
   color: var(--clr-primary-text);
   text-align: center;
+  width: 75vw;
+  margin: 0 auto;
 }
 .customer-companies {
   display: flex;
   gap: 4rem;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
 }
 
 /*********************************/
 /*            SECTION 3          */
 /*********************************/
+
+.section-3 {
+  background-color: var(--clr-hero-section-bg);
+  padding: 7rem 6rem;
+}
 .heading-tertiary {
-  font-family: "DM Sans", sans-serif;
   font-size: var(--fs-secondary-heading);
   color: var(--clr-primary-text);
   text-align: center;
+  width: 65vw;
+  margin: 0 auto;
 }
 .section-3-boxes {
   display: flex;
   gap: 3rem;
   justify-content: center;
+  padding-top: 3rem;
 }
 .box-1 {
-  outline: 1px solid black;
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.043);
+  background-color: var(--clr-btn-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,13 +167,12 @@ html {
 .box-heading {
   font-size: var(--fs-boxes-heading);
   color: var(--clr-primary-text);
-  font-family: "DM Sans", sans-serif;
+
   text-align: center;
 }
 .box-details {
   font-size: var(--fs-boxes-details);
   color: var(--clr-inside-boxes);
-  font-family: "DM Sans", sans-serif;
   text-align: center;
 }
 
@@ -160,17 +184,23 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: var(--clr-footer-bg);
-  padding: 2rem;
+  padding: 2.5rem;
+}
+.footer-section {
+  width: 90vw;
+  margin: 0 auto;
+  /* padding: 2rem; */
 }
 .footer-box-1 {
   display: flex;
   gap: 1rem;
   align-items: center;
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .footert-text,
 .footer-box-2 {
-  font-family: "DM Sans", sans-serif;
   font-size: var(--fs-footer-text);
   color: var(--fs-footer-text);
   color: #9597ae;
@@ -179,4 +209,6 @@ footer {
 .footer-box-2 {
   display: flex;
   gap: 2rem;
+  width: 30vw;
+  margin: 0 auto;
 }
